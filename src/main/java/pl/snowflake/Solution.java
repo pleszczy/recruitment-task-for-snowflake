@@ -46,7 +46,7 @@ public class Solution {
         companies.stream().collect(toMap(Company::id, Company::name, (a, b) -> b));
 
     return persons.stream()
-        .filter(person -> Objects.equals(person.name(), "Dariusz") && person.companyId() != null)
+        .filter(it -> Objects.equals(it.name(), "Dariusz") && it.companyId() != null)
         .map(it -> new Result(it.id(), it.name(), companyIdToCompanyName.get(it.companyId())))
         .toList();
   }
