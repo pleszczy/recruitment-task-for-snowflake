@@ -1,1 +1,1 @@
-# recruitment-task-for-snowflake
+# recruitment-task-for-<>
